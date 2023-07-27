@@ -3,6 +3,7 @@ type Props = {
 	// the ? after color? makes it NULLABLE - if we don't pass a colour value it will default to whatever the default style is without it.
 	colour?: string
 	// I wouldn't worry too much about this type yet but () => void essentially means you will pass a function that doesn't return a specific value hence VOID
+	// notice this onClickFunc also doesn't have a ? this is because we want to force whomever is using this component to provide this value because without a onClick what would our button do! 
 	onClickFunc: () => void 
 	// the 'text' is going to be passed to the button html element and is just a string to populate the value thats displayed to the user, only a string makes sense.
 	text: string
